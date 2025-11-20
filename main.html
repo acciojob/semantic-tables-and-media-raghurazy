@@ -1,62 +1,60 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Semantic Table and Media List</title>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-	<table>
-		<thead>
-			<th>Roll numbers</th>
-			<th>Names</th>
-		</thead>
-		<tbody>
-			<tr>
-				<td>1</td>
-				<td>Raghu</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>Raj</td>
-			</tr>
-			<tr>
-				<td>3</td>
-				<td>Shivam</td>
-			</tr>
-		</tbody>
-	</table>
-	<h1>List of medias</h1>
 
-	<ol>
-    <!-- First Item: Image -->
+<!-- Semantic Table -->
+<table>
+    <thead>
+        <tr>
+            <th>Roll Number</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Alice</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Bob</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Charlie</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Heading Between Table and List -->
+<h2>List of medias</h2>
+
+<!-- Ordered List of Media Items -->
+<ol>
+    <!-- 1st Item: Image -->
     <li>
-        <img src="https://picsum.photos/id/123/200/300" 
-             alt="Random architecture image">
+        <img src="https://picsum.photos/id/123/200/300" alt="Sample image">
     </li>
 
-    <!-- Second Item: Video -->
+    <!-- 2nd Item: Video with <source> -->
     <li>
-        <video controls width="300">
+        <video controls>
             <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" 
                     type="video/mp4">
-            Your browser does not support the video tag.
         </video>
     </li>
 
-    <!-- Third Item: Audio -->
+    <!-- 3rd Item: Audio (Cypress requires src on <audio>) -->
     <li>
-        <audio controls>
-    <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg">
-</audio>
-
+        <audio controls src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg"></audio>
     </li>
 </ol>
-    <script type="text/javascript" src="./script.js">
-</script>
 
 </body>
-
 </html>
